@@ -72,6 +72,11 @@ public:
 	void setVolume(uint8_t volume) {
 		sendCommand(0x06, volume);
 	}
+	
+	
+	void reset() {
+		sendCommand(0x0C);
+	}
 };
 
 
